@@ -1,0 +1,125 @@
+*{
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.container{
+    width: 560px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+form{
+    width: 100%;
+    height: 95%;
+     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(92,99,105,0.2);
+    background: hsla(148, 89%, 78%, 1);
+
+    background: linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#95F9C3", endColorstr="#0B3866", GradientType=1 );
+    
+  
+    
+}
+.line-1, .line-2, .line-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+ 
+  
+    
+}
+.control{
+    height: 20px;
+    border-radius:4px ;
+    cursor: pointer;
+    background:none;
+    border:2px solid lightgray;
+    
+}
+.label{
+    font-family: 'Fredoka', sans-serif;
+}
+
+.inside:hover{
+    color: #6a5af9;
+    transform: scale(1.1);
+    
+}
+.control:hover{
+     border-color: #6a5af9;
+     background: lightgray;
+}
+.inside, .selected  {
+  transition-duration: 0.3s;
+}
+.line-4{
+    display: flex;
+    justify-content: space-around;
+   
+    padding: 10px ;
+}
+.line-4 .inside input {
+    width: 80%;
+    
+}
+ .selected {
+    padding: 5px ;
+    border-radius: 4px;
+    border: 2px solid lightgray;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+   
+    
+
+}
+.selected i {
+    margin-right: 15px;
+}
+.dropdown:hover .selected-list{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.dropdown{
+    margin-top: 12px;
+    position: relative;
+}
+.selected:hover{
+    border-color: #6a5af9;
+    background: lightgray;
+}
+.selected-list{
+    position: absolute;
+    border-radius: 4px;
+    background-color: lightblue;
+    left: 0;
+    right: 0;
+    top: 110%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ,visibility 0.2s;
+    cursor: pointer;
+}
+.selected-list-item{
+    padding: 10px;
+}
+.selected-list-item:hover{
+    color:white;
+    transition: 0.3s;
+}
